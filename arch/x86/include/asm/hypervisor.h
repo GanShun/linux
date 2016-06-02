@@ -48,9 +48,6 @@ struct hypervisor_x86 {
 extern const struct hypervisor_x86 *x86_hyper;
 
 /* Recognized hypervisors */
-#ifdef CONFIG_VMMCP
-extern const struct hypervisor_x86 x86_hyper_vmmcp;
-#endif
 extern const struct hypervisor_x86 x86_hyper_vmware;
 extern const struct hypervisor_x86 x86_hyper_ms_hyperv;
 extern const struct hypervisor_x86 x86_hyper_xen;
